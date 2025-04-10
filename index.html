@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkOps - Empresa de Hackers</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleMenu() {
+            document.querySelector(".MP-nav-list").classList.toggle("MP-show");
+        }
+    </script>
+</head>
+<body>
+    <header class="MP-header">
+        <nav class="MP-nav">
+            <ul class="MP-nav-list MP-left">
+                <li class="MP-nav-item"><a href="#">Servicios</a></li>
+                <li class="MP-nav-item"><a href="#">Quienes Somos</a></li>
+            </ul>
+            <div class="MP-logo">DarkOps</div>
+            <ul class="MP-nav-list MP-right">
+                <li class="MP-nav-item"><a href="#">Inicio</a></li>
+                <li class="MP-nav-item"><a href="#">Contacto</a></li>
+            </ul>
+            <div class="MP-menu-icon" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <section class="MP-hero">
+        <h1>Bienvenidos a DarkOps</h1>
+        <p>La vanguardia en ciberseguridad y hacking ético</p>
+    </section>
+
+    <section class="MP-info">
+        <h2>Servicios</h2>
+        <div class="MP-items">
+            <div class="MP-item">
+                <div class="MP-img-placeholder"> 
+                </div>
+                <h3>Auditoría de Seguridad</h3>
+                <ul>
+                    <li>Evaluación de vulnerabilidades <span>$800</span></li>
+                    <li>Pruebas de penetración <span>$800</span></li>
+                    <li>Consultoría avanzada <span>$1200</span></li>
+                </ul>
+            </div>
+            <div class="MP-item">
+                <div class="MP-img-placeholder">
+                </div>
+                <h3>Hacking Ético</h3>
+                <ul>
+                    <li>Simulación de ataques <span>$700</span></li>
+                    <li>Revisión de código <span>$600</span></li>
+                    <li>Monitoreo de amenazas <span>$900</span></li>
+                </ul>
+            </div>
+            <div class="MP-item">
+                <div class="MP-img-placeholder">
+                </div>
+                <h3>Protección de Infraestructuras</h3>
+                <ul>
+                    <li>Firewall personalizado <span>$1000</span></li>
+                    <li>Configuración de redes seguras <span>$1200</span></li>
+                    <li>Monitorización continua <span>$1500</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="MP-contact">
+        <h2>Contacto</h2>
+        <p>📍 Dirección: Calle 456, Ciudad: TangaMandapio</p>
+        <p>📞 Teléfono: +1 123 456 7890</p>
+        <p>📧 Correo: contacto@darkops.com</p>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section class="MP-changelog">
+        <h2>Registro de Cambios</h2>
+        <div class="MP-changelog-list">
+            <div class="MP-changelog-item">
+                <div class="MP-date">15 de marzo, 2025</div>
+                <div class="MP-bullet"></div>
+                <div class="MP-change">Nuevo servicio de Monitoreo de Infraestructura</div>
+            </div>
+            <div class="MP-changelog-item">
+                <div class="MP-date">28 de febrero, 2025</div>
+                <div class="MP-bullet"></div>
+                <div class="MP-change">Mejora en las pruebas de penetración</div>
+            </div>
+            <div class="MP-changelog-item">
+                <div class="MP-date">10 de enero, 2025</div>
+                <div class="MP-bullet"></div>
+                <div class="MP-change">Lanzamiento del nuevo portal web</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="task-tracker">
+        <h2>Seguimiento de Tareas</h2>
+        <div class="input-group">
+            <input id="taskInput" type="text" placeholder="Escribe una tarea y presiona enter">
+            <button id="addTaskBtn">Agregar tarea</button>
+        </div>
+        <ul id="taskList"></ul>
+    </section>
+
+    <footer class="MP-footer">
+        <p>&copy; 2025 DarkOps - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="taskTracker.js"></script>
+</body>
+</html>
